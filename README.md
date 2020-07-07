@@ -96,3 +96,7 @@ README.md是文档文件，在里面写好来文档，就可以部署到gh-pages
 ```
 git subtree push --prefix docs/.vuepress/dist origin gh-pages
 ```
+
+建立一个单独部署的npm包文件src/BaseUI，然后推送到base-npm，之后切换到base-npm，然后执行发包操作就不会有其他文件污染
+
+git subtree push --prefix src/BaseUI origin base-npm
