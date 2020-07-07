@@ -1,7 +1,7 @@
 {
-  "name": "BaseUI",
+  "name": "@wuxianqiang/a-ui",
   "version": "0.1.1",
-  "description": "",
+  "description": "这是一个测试包，不要下载使用",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["Vue"],
   "author": "",
   "license": "ISC"
 }
