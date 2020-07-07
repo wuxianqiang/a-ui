@@ -1,11 +1,24 @@
-# a-ui
+# 发包
 
-## 安装
+> 给项目发布一个NPM包让其他项目组使用我们写的组件
+
+我们一般不会把项目所有的文件都发到NPM中，我们只发部分文件，我们可以建立 `.npmignore` 文件，把不需要的文件排除。
+
+```
+docs
+node_modules
+public
+src/assets
+src/App
+src/main
+```
+
+其他项目组可以安装我们的组件
 ```
 npm install a-ui
 ```
 
-## 使用
+使用即可
 
 ```
 import HelloWorld from 'a-ui/src/components/HelloWorld.vue'
@@ -16,12 +29,8 @@ import HelloWorld from 'a-ui/src/components/HelloWorld.vue'
 ```
 import { HelloWorld } from 'a-ui'
 ```
-还需借助babel插件来完成
+还需借助babel插件来完成，这个文件的路径规则有要求，比较麻烦，可忽略
 
-
-通常你想把自己的组件写完然后给别的项目组使用，通常是发个NPM包的形式进行共享
-
-按需加载对路径有要求，需要单独处理
 
 # 给项目建立文档
 
@@ -59,7 +68,7 @@ export default ({
   Vue.use(BaseUI)
 }
 ```
-我们导入来BaseUI来自项目的src/list.js，改文件的内容如下
+我们导入BaseUI来自项目的src/list.js，文件的内容如下
 ```js
 import HelloWorld from './components/HelloWorld.vue';
 
